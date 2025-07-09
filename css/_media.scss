@@ -1,0 +1,603 @@
+//네비게이션
+@media screen and (max-width:768px){
+  .main-header {
+    nav {
+      height: 50px !important;
+
+      .main-header-logo{
+        height: 50px !important;
+      }
+
+      .menu-toggle {
+        display: block !important;
+        position: relative;
+        z-index: 1001;
+      }
+
+      .main-navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh !important;
+        background-color: var(--color-bbo-green);
+        opacity: 0.9;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        font-size: 24px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 1000;
+      } //main-navbar
+
+      .main-navbar.active {
+        transform: translateX(0);
+      }
+    } //nav
+  } //main-header
+}
+
+
+
+
+// ------------------------------------------- 메인
+
+
+
+
+//모바일
+@media screen and (max-width:375px){
+  body{
+
+    //배너
+    .main-banner{
+      margin-top: 50px;
+      height: 637px;
+
+      .main-banner-container{
+        .main-banner-title{
+          font-size: 32px;
+        }
+
+        .main-banner-text{
+          font-size: 16px;
+        }
+      }
+    } //main-banner
+
+    .main-sec1{
+      .main-sec1-title{
+        font-size: 32px;
+        text-align: center;
+      }
+
+      .main-sec1-container{
+        .main-sec1-img{
+          width: 60%;
+          min-width: 300px;
+          height: 450px;
+          margin-bottom: 20px;
+        }
+
+        .main-sec1-content{
+          width: 90%;
+          text-align: center;
+
+          .main-sec1-content-sub{
+            font-size: 24px;
+          }
+
+          .main-sec1-content-text{
+            font-size: 16px;
+          }
+        }
+      } //main-sec1-container
+    } //main-sec1
+
+    //툴
+    .main-sec2{
+      .main-sec2-title{
+        font-size: 32px;
+        text-align: center;
+      }
+
+      .main-sec2-slider-mask{
+        .main-sec2-slider{
+          .main-sec2-container{
+            gap: 10px;
+
+            .toolbox:first-child{
+              margin-left: 10px;
+            }
+
+            .toolbox{
+              width: 120px;
+              height: 120px;
+
+              .tool-text{
+                font-size: 12px;
+              }
+            } //toolbox
+          } //main-sec2-container
+        }
+      }
+    } //main-sec2
+
+    //워크스페이스
+    .main-sec3{
+      .main-sec3-title{
+        font-size: 32px;
+        text-align: center;
+      }
+
+      .main-sec3-container{
+        .main-sec3-box{
+          width: 90%;
+          min-width: 320px;
+
+          .main-sec3-box-img{
+            height: 240px;
+          }
+
+          .main-sec3-box-content{
+            text-align: center;
+
+            .main-sec3-sub{
+              font-size: 24px;
+            }
+
+            .main-sec3-text{
+              font-size: 14px;
+            }
+
+            .main-sec3-btn{
+              width: 40px;
+              height: 40px;
+              display: flex;
+              bottom: 24px;
+              right: 5%;
+              align-items: center;
+              justify-items: center;
+
+              a{
+                font-size: 24px;
+                display: block;
+                margin-left: -4px;
+              }
+            }
+          } //main-sec3-box-content
+        } //main-sec3-box
+      } //main-sec3-container
+    } //main-sec3
+
+    .main-top-btn{
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+      right: 5%;
+    }
+  } //body
+} //모바일
+
+
+//아이패드 미니
+@media screen and (max-width: 768px) and (min-width:376px){
+  body{
+
+    //배너
+    .main-banner{
+      margin-top: 50px;
+      height: 994px;
+    }
+
+    //프로필
+    .main-sec1{
+      .main-sec1-title{
+        font-size: 48px;
+        text-align: center;
+      }
+
+      .main-sec1-container{
+        .main-sec1-img{
+          margin-bottom: 20px;
+        }
+
+        .main-sec1-content{
+          width: 90%;
+          text-align: center;
+        }
+      } //main-sec1-container
+    } //main-sec1
+
+    //툴
+    .main-sec2{
+      .main-sec2-title{
+        font-size: 48px;
+        text-align: center;
+      }
+
+      .main-sec2-slider-mask{
+        .main-sec2-slider{
+          .main-sec2-container{
+            gap: 20px;
+
+            .toolbox:first-child{
+              margin-left: 20px;
+            }
+
+            .toolbox{
+              width: 150px;
+              height: 150px;
+            }
+          } //main-sec2-container
+        }
+      }
+    } //main-sec2
+
+    //워크스페이스
+    .main-sec3{
+      .main-sec3-title{
+        font-size: 48px;
+        text-align: center;
+      }
+
+      .main-sec3-container{
+        .main-sec3-box{
+          // border: 1px solid;
+          width: 96%;
+        }
+      }
+    }
+  } //body
+} //아이패드 미니
+
+//아이패드 프로
+@media screen and (max-width:1024px) and (min-width:769px){
+  body{
+
+    //배너
+    .main-banner{
+      height: 1286px;
+    }
+
+    //워크스페이스
+    .main-sec3{
+      .main-sec3-container{
+
+        .main-sec3-box{
+          min-width: 250px;
+
+          .main-sec3-box-img{
+            height: 320px;
+          }
+        }
+      } //main-sec3-container
+    } //main-sec3
+  } //body
+} //아이패드 프로
+
+
+
+
+// ------------------------------------------- 어바웃
+
+
+
+
+//모바일
+@media screen and (max-width:375px){
+  body{
+    .about-sec1{
+      margin-top: 90px !important;
+      margin-bottom: 50px !important;
+
+      .about-sec1-title{
+        font-size: 32px !important;
+        text-align: center;
+      }
+
+      .about-sec1-container{
+        .about-sec1-img{
+          height: 400px !important;
+          margin: 0 auto;
+        }
+        
+        .about-sec1-content{
+          width: 100% !important;
+          margin: 0 auto;
+
+          .about-sec1-content-container{
+            gap: 20px !important;
+            grid-template-columns: repeat(1, 1fr) !important;
+            grid-template-rows: repeat(4, auto) !important;
+
+            .about-sec1-box{
+              .about-sec1-sub{
+                font-size: 24px !important;
+                text-align: center;
+              }
+
+              .about-sec1-text{
+                font-size: 12px !important;
+                text-align: center;
+              }
+            }
+          }
+        } //about-sec1-content
+      } //about-sec1-container
+    } //about-sec1
+
+    .about-sec2{
+      margin-bottom: 90px !important;
+
+      .about-sec2-title{
+        font-size: 32px !important;
+        text-align: center;
+      }
+
+      .about-sec2-sub{
+        font-size: 12px !important;
+        text-align: center;
+      }
+
+      .about-sec2-container{
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-rows: repeat(8, auto) !important;
+
+        .about-sec2-textbox{
+          p{font-size: 12px !important;}
+        }
+      } //about-sec2-container
+    } //about-sec2
+  } //body
+} //모바일
+
+
+//아이패드 미니
+@media screen and (max-width: 768px) and (min-width:376px){
+  body{
+    .about-sec1{
+      margin-top: 120px !important;
+      margin-bottom: 90px !important;
+
+      .about-sec1-title{
+        font-size: 48px;
+        text-align: center;
+      }
+
+      .about-sec1-container{
+        .about-sec1-img{
+          height: 400px !important;
+          margin: 0 auto;
+        }
+        
+        .about-sec1-content{
+          width: 100%;
+          margin: 0 auto;
+
+          .about-sec1-content-container{
+            gap: 40px !important;
+          }
+        }
+      } //about-sec1-container
+    } //about-sec1
+
+    .about-sec2{
+      margin-bottom: 90px !important;
+
+      .about-sec2-title{
+        font-size: 48px;
+        text-align: center;
+      }
+
+      .about-sec2-sub{
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .about-sec2-container{
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(4, auto) !important;
+      } //about-sec2-container
+    } //about-sec2
+  } //body
+} //아이패드 미니
+
+
+//아이패드 프로
+@media screen and (max-width:1024px) and (min-width:769px){
+  body{
+    .about-sec2{
+      .about-sec2-container{
+        .about-sec2-box{
+          .about-sec2-img{
+            height: 200px !important;
+          }
+
+          .about-sec2-textbox{
+            h3{
+              font-size: 20px !important;
+            }
+
+            p{
+              font-size: 14px !important;
+            }
+          }
+        } //about-sec2-box
+      } //about-sec2-container
+    } //about-sec2
+  } //body
+} //아이패드 프로
+
+
+
+
+// ------------------------------------------- 워크스페이스
+
+
+
+
+//모바일
+@media screen and (max-width:375px){
+  body{
+    .work-sec1{
+      margin-top: 90px !important;
+      width: 100% !important;
+
+      .work-sec1-title{
+        font-size: 48px !important;
+        text-align: center;
+      }
+
+      .tab-container{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 24px !important;
+        font-size: 12px !important;
+        gap: 10px !important;
+
+        .tabs{
+          padding: 5px 10px !important;
+          border-radius: 25px !important;
+        }
+      } //tab-container
+
+      .tab-wrap{
+        padding: 16px !important;
+
+        .work-tab{
+          .tab-box-container{
+            .tab-box{
+              .tab-box-img{
+                width: 100% !important;
+                min-width: 0 !important;
+                height: 240px !important;
+              }
+
+              .tab-box-logo{
+                width: 100% !important;
+                height: 240px !important;
+                background-size: 80% !important;
+              }
+
+              .tab-box-logo::before{
+                content: "";
+                width: 100%;
+                height: inherit;
+                position: absolute;
+                overflow: hidden;
+                z-index: -1;
+                background-color: #fff;
+              }
+
+              .tab-box-content{
+                width: 100% !important;
+                padding: 16px 16px 32px 16px !important;
+
+                .tab-box-title{
+                  font-size: 24px !important;
+                  margin-bottom: 12px !important;
+                }
+
+                .tab-box-text{
+                  font-size: 12px !important;
+                }
+
+                span{
+                  font-size: 10px !important;
+                  margin-bottom: 16px !important;
+                }
+
+                .tab-box-tool{
+                  li{
+                    width: 30px !important;
+                    height: 30px !important;
+                  }
+                }
+
+                .tab-box-btn{
+                  width: 30px !important;
+                  height: 30px !important;
+
+                  a{
+                    font-size: 16px !important;
+                  }
+                }
+              } //tab-box-content
+            } //tab-box
+          } //tab-box-container
+        } ///work-tab
+      } //tab-wrap
+    } //work-sec1
+  } //body
+} //모바일
+
+
+//아이패드 미니
+@media screen and (max-width:768px) and (min-width:376px){
+  body{
+    .work-sec1{
+      margin-top: 90px !important;
+      width: 100% !important;
+
+      .work-sec1-title{
+        font-size: 48px;
+        text-align: center;
+      }
+
+      .tab-wrap{
+        .work-tab{
+          .tab-box-container{
+            .tab-box{
+              margin-bottom: 72px !important;
+              padding-bottom: 32px;
+
+              .tab-box-img{
+                width: 100% !important;
+                margin-bottom: 24px;
+              }
+
+              .tab-box-logo{
+                width: 100% !important;
+                margin-bottom: 24px;
+                background-size: 80% !important;
+              }
+
+              .tab-box-logo::before{
+                content: "";
+                width: 100%;
+                height: inherit;
+                position: absolute;
+                overflow: hidden;
+                z-index: -1;
+                background-color: #fff;
+              }
+
+              .tab-box-content{
+                width: 100% !important;
+                padding: 32px !important;
+
+                .tab-box-tool{
+                  li{
+                    width: 40px !important;
+                    height: 40px !important;
+                  }
+                }
+              }
+            }
+          } //tab-box-contaienr
+        } //work-tab
+      } //tab-wrap
+    } //work-sec1
+  } //body
+} //아이패드 미니
+
+
+//아이패드 프로
+@media screen and (max-width:1024) and (max-width:769px){
+  body{
+
+  } //body
+} //아이패드 프로

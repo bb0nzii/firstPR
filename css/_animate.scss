@@ -1,0 +1,17 @@
+//스크롤 애니메이션
+.scroll-animate{
+    opacity: 0;
+    transform: translateY(+50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.scroll-animate.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+//툴 슬라이더
+@keyframes scroll-left {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-50%);}
+}

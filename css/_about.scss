@@ -1,0 +1,113 @@
+body{
+    .about-sec1{
+        width: 90%;
+        margin: 160px auto 120px auto;
+
+        .about-sec1-title{
+            font-size: 64px;
+        }
+
+        .about-sec1-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            .about-sec1-img{
+                width: 25%;
+                min-width: 250px;
+                height: 600px;
+                background: url(../src/about/proflie.png) no-repeat center center/contain;
+            }
+
+            .about-sec1-content{
+                width: 70%;
+
+                .about-sec1-content-container{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, auto);
+                    gap: 5px;
+
+                    .about-sec1-box{
+                        .about-sec1-sub{
+                            font-size: 32px;
+                            margin-bottom: 16px;
+                        }
+
+                        .about-sec1-text{
+                            font-size: 16px;
+                            margin-bottom: 12px;
+                            word-break: keep-all;
+                            padding-left: 12px;
+
+                            .about-sec1-info{
+                                display: inline-block;
+                                padding-left: 12px;
+                                color: var(--color-bbo-gray);
+                            }
+                        }
+                    }
+                } //about-sec1-content-container
+            } //about-sec1-content
+        } //about-sec1-container
+    } //about-sec1
+
+    .about-sec2{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 120px;
+
+        .about-sec2-title{
+            font-size: 64px;
+        }
+
+        .about-sec2-sub{
+            font-size: 24px;
+        }
+
+        .about-sec2-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 16px;
+
+            .about-sec2-box{
+                background-color: #fff;
+                border-radius: 25px;
+                box-shadow: 0 0 5px rgba(0,0,0,0.1);
+                overflow: hidden;
+
+                .about-sec2-img{
+                    width: 100%;
+                    height: 400px;
+                }
+
+                .about-sec2-textbox{
+                    width: 100%;
+                    padding: 16px;
+
+                    h3{
+                        font-size: 24px;
+                        margin-bottom: 8px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            } //about-sec2-box
+        } //about-sec2-container
+    } //about-sec2
+} //body
+
+
+//사진 삽입
+.about-img1{background: url(../src/about/about1.JPG) no-repeat center center/cover;}
+.about-img2{background: url(../src/about/about2.JPG) no-repeat bottom center/cover;}
+.about-img3{background: url(../src/about/about3.JPG) no-repeat center center/cover;}
+.about-img4{background: url(../src/about/about4.JPG) no-repeat center center/cover;}
+.about-img5{background: url(../src/about/about5.JPG) no-repeat center center/cover;}
+.about-img6{background: url(../src/about/about6.JPG) no-repeat center center/cover;}
+.about-img7{background: url(../src/about/about7.jpeg) no-repeat center center/cover;}
+.about-img8{background: url(../src/about/about8.jpg) no-repeat center center/cover;}
