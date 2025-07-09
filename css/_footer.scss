@@ -1,0 +1,70 @@
+.footer{
+    width: 100%;
+    padding: 64px 5%;
+    margin-top: 150px;
+
+    .footer-container{
+        width: 100%;
+
+        .footer-textbox{
+            position: relative;
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--color-bbo-ivory);
+   
+            .footer-sub{
+                width: 100%;
+                font-size: 32px;
+                margin-bottom: 16px;
+            }
+
+            .footer-title{
+                width: 100%;
+                font-size: clamp(48px, 6vw, 6vw);
+                margin-bottom: 32px;
+            }
+
+            .footer-text{
+                width: 100%;
+                font-size: 24px;
+            }
+
+            .footer-contact{
+                width: 100%;
+                display: flex;
+                justify-content: right;
+                gap: 20px;
+                position: absolute;
+                bottom: 12px;
+
+                li{
+                    width: 50px;
+                    height: 50px;
+                    background-color: var(--color-bbo-ivory);
+                    border-radius: 100%;
+
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        } //footer-textbox
+
+        .footer-content{
+            width: 100%;
+
+            .footer-copy{
+                font-size: 18px;
+                text-align: center;
+
+                .footer-copyright{display: block;}
+            }
+        } //footer-content
+    } //footer-container
+} //footer
+
+//사진 삽입
+.icon-blog{background: url(../src/icon/icon-blog.svg) no-repeat center center/65%;}
+.icon-github{background: url(../src/icon/icon-github.svg) no-repeat center center/cover;}

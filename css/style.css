@@ -110,38 +110,6 @@ a {
   color: var(--color-bbo-subgreen) !important;
 }
 
-body .main-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 99999;
-}
-body .main-header nav {
-  width: 100%;
-  height: 80px;
-  padding: 0 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-body .main-header nav .main-header-logo {
-  width: 200px;
-  height: 70px;
-}
-body .main-header nav .menu-toggle {
-  display: none;
-  font-size: 32px;
-  cursor: pointer;
-}
-body .main-header nav .main-navbar {
-  height: 100px;
-  font-size: 20px;
-  display: flex;
-  gap: 80px;
-  justify-content: center;
-  align-items: center;
-}
 body .main-banner {
   width: 100%;
   height: 1000px;
@@ -591,7 +559,7 @@ body .main-top-btn {
     height: 320px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   body .about-sec1 {
     margin-top: 90px !important;
     margin-bottom: 50px !important;
@@ -640,7 +608,7 @@ body .main-top-btn {
     font-size: 12px !important;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 376px) {
+@media screen and (max-width: 768px) and (min-width: 431px) {
   body .about-sec1 {
     margin-top: 120px !important;
     margin-bottom: 90px !important;
@@ -687,7 +655,7 @@ body .main-top-btn {
     font-size: 14px !important;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   body .work-sec1 {
     margin-top: 90px !important;
     width: 100% !important;
@@ -756,7 +724,7 @@ body .main-top-btn {
     font-size: 16px !important;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 376px) {
+@media screen and (max-width: 768px) and (min-width: 431px) {
   body .work-sec1 {
     margin-top: 90px !important;
     width: 100% !important;
@@ -1090,4 +1058,103 @@ body .work-sec1 .tab-wrap .work-tab .tab-box-container .tab-box .tab-box-content
 
 .tab-box-gred2 {
   background: url(../src/work/webcon/work-gred1.JPG) no-repeat center center/contain;
+}
+
+body .main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+}
+body .main-header nav {
+  width: 100%;
+  height: 80px;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+body .main-header nav .main-header-logo {
+  width: 200px;
+  height: 70px;
+}
+body .main-header nav .menu-toggle {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+body .main-header nav .main-navbar {
+  height: 100px;
+  font-size: 20px;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  padding: 64px 5%;
+  margin-top: 150px;
+}
+.footer .footer-container {
+  width: 100%;
+}
+.footer .footer-container .footer-textbox {
+  position: relative;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--color-bbo-ivory);
+}
+.footer .footer-container .footer-textbox .footer-sub {
+  width: 100%;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.footer .footer-container .footer-textbox .footer-title {
+  width: 100%;
+  font-size: clamp(48px, 6vw, 6vw);
+  margin-bottom: 32px;
+}
+.footer .footer-container .footer-textbox .footer-text {
+  width: 100%;
+  font-size: 24px;
+}
+.footer .footer-container .footer-textbox .footer-contact {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  position: absolute;
+  bottom: 12px;
+}
+.footer .footer-container .footer-textbox .footer-contact li {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-bbo-ivory);
+  border-radius: 100%;
+}
+.footer .footer-container .footer-textbox .footer-contact li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.footer .footer-container .footer-content {
+  width: 100%;
+}
+.footer .footer-container .footer-content .footer-copy {
+  font-size: 18px;
+  text-align: center;
+}
+.footer .footer-container .footer-content .footer-copy .footer-copyright {
+  display: block;
+}
+
+.icon-blog {
+  background: url(../src/icon/icon-blog.svg) no-repeat center center/65%;
+}
+
+.icon-github {
+  background: url(../src/icon/icon-github.svg) no-repeat center center/cover;
 }/*# sourceMappingURL=style.css.map */
