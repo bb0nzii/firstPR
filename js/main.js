@@ -61,7 +61,7 @@ const trails = [];
 
 document.addEventListener('mousemove', (e) => {
   const trail = document.createElement('img');
-  trail.src = '../src/icon/sunflower.svg'; // 이미지 경로
+  trail.src = 'https://raw.githubusercontent.com/bb0nzii/PR/main/src/icon/sunflower.svg'; // 이미지 경로
   trail.style.position = 'absolute';
   trail.style.width = '80px';
   trail.style.pointerEvents = 'none';
