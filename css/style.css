@@ -453,7 +453,7 @@ body .main-top-btn {
     transform: translateX(0);
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   body .main-banner {
     margin-top: 50px;
     height: 637px;
@@ -542,7 +542,7 @@ body .main-top-btn {
     right: 5%;
   }
 }
-@media screen and (max-width: 768px) and (min-width: 376px) {
+@media screen and (max-width: 768px) and (min-width: 431px) {
   body .main-banner {
     margin-top: 50px;
     height: 994px;
