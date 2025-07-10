@@ -18,7 +18,7 @@ body{
             align-items: center;
             gap: 16px;
             text-align: center;
-            margin-bottom: 30%;
+            margin-bottom: 20%;
 
             .main-banner-title{
                 width: 100%;
@@ -26,13 +26,14 @@ body{
                 word-break: keep-all;
                 color: var(--color-bbo-white);
                 text-shadow: 0 0 10px rgba(0,0,0,0.1);
+                
             }
 
             .main-banner-text{
                 width: 100%;
                 font-size: 24px;
                 color: var(--color-bbo-white);
-                text-shadow: 0 0 10px rgba(0,0,0,0.1);
+                text-shadow: 0 0 20px rgba(0,0,0,0.1);
             }
         } //main-banner-container
     } //main-banner

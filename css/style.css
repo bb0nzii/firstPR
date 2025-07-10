@@ -127,7 +127,7 @@ body .main-banner .main-banner-container {
   align-items: center;
   gap: 16px;
   text-align: center;
-  margin-bottom: 30%;
+  margin-bottom: 20%;
 }
 body .main-banner .main-banner-container .main-banner-title {
   width: 100%;
@@ -140,7 +140,7 @@ body .main-banner .main-banner-container .main-banner-text {
   width: 100%;
   font-size: 24px;
   color: var(--color-bbo-white);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 body .main-banner::before {
   content: "";
@@ -542,6 +542,9 @@ body .main-top-btn {
   }
 }
 @media screen and (max-width: 768px) and (min-width: 431px) {
+  body .main-banner .main-banner-container {
+    margin-bottom: 40%;
+  }
   body .main-banner .main-banner-container .main-banner-title {
     font-size: 42px;
   }
@@ -582,6 +585,9 @@ body .main-top-btn {
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+  body .main-banner .main-banner-container {
+    margin-bottom: 50%;
+  }
   body .main-sec3 .main-sec3-container .main-sec3-box {
     min-width: 250px;
   }

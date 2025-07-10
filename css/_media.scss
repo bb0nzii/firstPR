@@ -97,6 +97,7 @@
     //배너
     .main-banner{
       .main-banner-container{
+
         .main-banner-title{
           font-size: 28px;
         }
@@ -229,6 +230,8 @@
     //배너
     .main-banner{
       .main-banner-container{
+        margin-bottom: 40%;
+
         .main-banner-title{
           font-size: 42px;
         }
@@ -302,6 +305,11 @@
 //아이패드 프로
 @media screen and (max-width:1024px) and (min-width:769px){
   body{
+    .main-banner{
+      .main-banner-container{
+        margin-bottom: 50%;
+      }
+    }
 
     //워크스페이스
     .main-sec3{
