@@ -112,7 +112,7 @@ a {
 
 body .main-banner {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   position: relative;
   background: url(../src/bg-sunflower.png) no-repeat center center/cover;
   display: flex;
@@ -457,9 +457,6 @@ body .main-top-btn {
   }
 }
 @media screen and (max-width: 430px) {
-  body .main-banner {
-    height: 667px;
-  }
   body .main-banner .main-banner-container .main-banner-title {
     font-size: 28px;
   }
@@ -545,9 +542,6 @@ body .main-top-btn {
   }
 }
 @media screen and (max-width: 768px) and (min-width: 431px) {
-  body .main-banner {
-    height: 1024px;
-  }
   body .main-banner .main-banner-container .main-banner-title {
     font-size: 42px;
   }
@@ -588,9 +582,6 @@ body .main-top-btn {
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  body .main-banner {
-    height: 1286px;
-  }
   body .main-sec3 .main-sec3-container .main-sec3-box {
     min-width: 250px;
   }
