@@ -282,6 +282,9 @@ body .main-sec3 .main-sec3-container .main-sec3-box .main-sec3-box-content .main
 body .main-sec3 .main-sec3-container .main-sec3-box .main-sec3-box-content .main-sec3-btn a {
   font-size: 32px;
 }
+body .main-sec3 .main-sec3-container .main-sec3-box:hover {
+  background-size: 120%;
+}
 body .main-top-btn {
   width: 60px;
   height: 60px;
@@ -419,6 +422,32 @@ body .main-top-btn {
   }
   .main-header nav .main-navbar.active {
     transform: translateX(0);
+  }
+}
+@media screen and (max-width: 430px) {
+  .footer .footer-container .footer-textbox {
+    padding-bottom: 90px !important;
+    margin-bottom: 24px !important;
+  }
+  .footer .footer-container .footer-textbox .footer-sub {
+    font-size: 18px !important;
+  }
+  .footer .footer-container .footer-textbox .footer-title {
+    font-size: clamp(24px, 6vw, 6vw) !important;
+  }
+  .footer .footer-container .footer-textbox .footer-text {
+    font-size: 12px !important;
+  }
+  .footer .footer-container .footer-textbox .footer-contact {
+    justify-content: left !important;
+    bottom: 24px !important;
+  }
+  .footer .footer-container .footer-textbox .footer-contact li {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .footer .footer-container .footer-content .footer-copy {
+    font-size: 12px !important;
   }
 }
 @media screen and (max-width: 430px) {

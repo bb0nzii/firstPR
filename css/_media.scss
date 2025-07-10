@@ -40,6 +40,46 @@
 }
 
 
+//푸터
+@media screen and (max-width: 430px){
+  .footer{
+    .footer-container{
+      .footer-textbox{
+        padding-bottom: 90px !important;
+        margin-bottom: 24px !important;
+
+        .footer-sub{
+          font-size: 18px !important;
+        }
+
+        .footer-title{
+          font-size: clamp(24px, 6vw, 6vw) !important;
+        }
+
+        .footer-text{
+          font-size: 12px !important;
+        }
+
+        .footer-contact{
+          justify-content: left !important;
+          bottom: 24px !important;
+
+          li{
+            width: 35px !important;
+            height: 35px !important;
+          }
+        } //footer-contact
+      } //footer-textbox
+
+      .footer-content{
+          .footer-copy{
+            font-size: 12px !important;
+          }
+        }
+    } //footer-container
+  } //footer
+}
+
 
 
 // ------------------------------------------- 메인
