@@ -6,7 +6,7 @@ body{
         height: 1000px;
         margin-top: 80px;
         position: relative;
-        background: url(../src/bg.png) no-repeat right bottom/cover;
+        background: url(../src/bg-sunflower.png) no-repeat center center/cover;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -18,16 +18,22 @@ body{
             flex-direction: column;
             align-items: center;
             gap: 16px;
+            text-align: center;
+            margin-bottom: 40vh;
 
             .main-banner-title{
                 width: 100%;
                 font-size: 64px;
                 word-break: keep-all;
+                color: var(--color-bbo-white);
+                text-shadow: 0 0 10px rgba(0,0,0,0.1);
             }
 
             .main-banner-text{
                 width: 100%;
                 font-size: 24px;
+                color: var(--color-bbo-white);
+                text-shadow: 0 0 10px rgba(0,0,0,0.1);
             }
         } //main-banner-container
     } //main-banner

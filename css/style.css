@@ -115,7 +115,7 @@ body .main-banner {
   height: 1000px;
   margin-top: 80px;
   position: relative;
-  background: url(../src/bg.png) no-repeat right bottom/cover;
+  background: url(../src/bg-sunflower.png) no-repeat center center/cover;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -127,15 +127,21 @@ body .main-banner .main-banner-container {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  text-align: center;
+  margin-bottom: 40vh;
 }
 body .main-banner .main-banner-container .main-banner-title {
   width: 100%;
   font-size: 64px;
   word-break: keep-all;
+  color: var(--color-bbo-white);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 body .main-banner .main-banner-container .main-banner-text {
   width: 100%;
   font-size: 24px;
+  color: var(--color-bbo-white);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 body .main-banner::before {
   content: "";
@@ -396,6 +402,7 @@ body .main-top-btn {
     height: 50px !important;
   }
   .main-header nav .main-header-logo {
+    width: 120px !important;
     height: 50px !important;
   }
   .main-header nav .menu-toggle {
@@ -456,10 +463,10 @@ body .main-top-btn {
     height: 637px;
   }
   body .main-banner .main-banner-container .main-banner-title {
-    font-size: 32px;
+    font-size: 28px;
   }
   body .main-banner .main-banner-container .main-banner-text {
-    font-size: 16px;
+    font-size: 10px;
   }
   body .main-sec1 .main-sec1-title {
     font-size: 32px;
@@ -543,6 +550,12 @@ body .main-top-btn {
   body .main-banner {
     margin-top: 50px;
     height: 994px;
+  }
+  body .main-banner .main-banner-container .main-banner-title {
+    font-size: 42px;
+  }
+  body .main-banner .main-banner-container .main-banner-text {
+    font-size: 18px;
   }
   body .main-sec1 .main-sec1-title {
     font-size: 48px;
