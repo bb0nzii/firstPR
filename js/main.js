@@ -56,7 +56,7 @@ function openTab(tabName) {
 
 
 //커서이미지
-const maxTrails = 10; // 잔상 최대 개수
+const maxTrails = 5; // 잔상 최대 개수
 const trails = [];
 
 document.addEventListener('mousemove', (e) => {
@@ -94,3 +94,36 @@ document.addEventListener('mousemove', (e) => {
     if (oldest) oldest.remove();
   }
 });
+
+
+//배너 구름
+const clouds = document.querySelectorAll('.bg-cloud');
+
+clouds.forEach((cloud) => {
+  let x = 0;
+  let y = 0;
+  let targetX = 0;
+  let targetY = 0;
+  let speed = 0.03;
+
+  function updateTarget() {
+    targetX = Math.random() * 300 - 150;
+    targetY = Math.random() * 200 - 100;
+  }
+
+  // 목표를 아주 자주 갱신 (부드러운 흐름 유지)
+  setInterval(updateTarget, 3000); // 0.3초마다 살짝 방향 바꿈
+
+  function animate() {
+    x += (targetX - x) * speed;
+    y += (targetY - y) * speed;
+
+    cloud.style.transform = `translate(${x}px, ${y}px)`;
+
+    requestAnimationFrame(animate);
+  }
+
+  updateTarget(); // 초기 목표 설정
+  animate();
+});
+

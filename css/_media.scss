@@ -96,6 +96,11 @@
 
     //배너
     .main-banner{
+      .bg-cloud{
+        width: 100%;
+        opacity: 0.6;
+      }
+      
       .main-banner-container{
 
         .main-banner-title{
@@ -229,6 +234,11 @@
 
     //배너
     .main-banner{
+      .bg-cloud{
+        width: 90%;
+        opacity: 0.6;
+      }
+
       .main-banner-container{
         margin-bottom: 40%;
 
@@ -523,6 +533,10 @@
                 width: 100% !important;
                 min-width: 0 !important;
                 height: 240px !important;
+              }
+
+              .tab-box-wc-img{
+                min-width: 100% !important;
               }
 
               .tab-box-logo{
