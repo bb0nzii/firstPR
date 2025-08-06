@@ -22,6 +22,12 @@ body{
                 width: 200px;
                 height: 70px;
                 // border: 1px solid white;
+
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
             }
 
             .menu-toggle{
